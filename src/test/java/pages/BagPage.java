@@ -3,7 +3,6 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 public class BagPage {
@@ -20,7 +19,7 @@ public class BagPage {
     }
 
     //locator to select size
-    @FindBy(id = "variant-1-sizeDimension1-L")
+    @FindBy(id = "variant-1-sizeDimension1-M")
         WebElement productSize;
     //locator to minimize promo pop up
     @FindBy(className = "promoDrawer__handlebar__icon")

@@ -2,7 +2,6 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -20,9 +19,7 @@ public class CheckOutPage {
     //locator for checkout button on checkout page
     @FindBy(id = "checkout-button")
         WebElement checkBtn;
-    //locator to find all button on the checkout out page
-//    @FindBy(className = "loyalty-guest-signin-button cb_fixed-button-primary css-0")
-//        WebElement guestCheck;
+
     @FindBy(css = ".loyalty-guest-signin-button")
         WebElement guestCheck2;
     @FindBy(className = "loyalty-continue-as-guest-btn")
@@ -54,7 +51,3 @@ public class CheckOutPage {
 
 }
 
-// driver.findElement(By.className("loyalty-continue-as-guest-btn")).click();
-//         List<WebElement> emailAcc = driver.findElements(By.id("verify-account-email"));
-//        emailAcc.get(1).sendKeys("abc@gmail.com");
-//        driver.findElement(By.className("loyalty-continue-as-guest-btn")).click();

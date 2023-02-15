@@ -35,8 +35,8 @@ public class HomePage {
         }
     }
     //to enter text in search bar
-    public void search_Product(){
-        search_Text.sendKeys("womens dress");
+    public void search_Product(String prod){
+        search_Text.sendKeys(prod);
         search_Text.sendKeys(Keys.ENTER);
     }
 }
